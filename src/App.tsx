@@ -2,6 +2,7 @@ import React from 'react';
 import {Componente} from './components/Componente';
 import {Properties} from './components/Properties';
 import {RenderizadoCondicional} from './components/RenderizadoCondicional';
+import { RenderizadoElemento } from './components/RenderizadoElemento';
 import './App.css';
 
 const elArreglo = ['a',1,2,3,'b','4'];
@@ -23,6 +24,8 @@ function App() {
         />
         <hr />
         <RenderizadoCondicional/>
+        <hr />
+        <RenderizadoElemento/>
       </section>
     </div>
   );
