@@ -1,8 +1,7 @@
 import React from "react";
 
-function Componente(){
+export const Componente = (): JSX.Element => {
     return <h2>Hola mundo</h2>
 }
 
-export default Componente;
 

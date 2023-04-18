@@ -1,6 +1,7 @@
 import React from 'react';
-import Componente from './components/Componente';
+import {Componente} from './components/Componente';
 import {Properties} from './components/Properties';
+import {RenderizadoCondicional} from './components/RenderizadoCondicional';
 import './App.css';
 
 const elArreglo = ['a',1,2,3,'b','4'];
@@ -20,6 +21,8 @@ function App() {
           funcion={(num:number) => num*num}
           componenteReact = {<Componente/>}
         />
+        <hr />
+        <RenderizadoCondicional/>
       </section>
     </div>
   );
