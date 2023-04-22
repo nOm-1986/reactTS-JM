@@ -4,6 +4,7 @@ import {Properties} from './components/Properties';
 import {RenderizadoCondicional} from './components/RenderizadoCondicional';
 import { RenderizadoElemento } from './components/RenderizadoElemento';
 import './App.css';
+import { ContadorHooks } from './components/ContadorHooks';
 
 const elArreglo = ['a',1,2,3,'b','4'];
 
@@ -26,6 +27,8 @@ function App() {
         <RenderizadoCondicional/>
         <hr />
         <RenderizadoElemento/>
+        <hr />
+        <ContadorHooks></ContadorHooks>
       </section>
     </div>
   );
