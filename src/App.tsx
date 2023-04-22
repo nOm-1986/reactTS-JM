@@ -28,7 +28,7 @@ function App() {
         <hr />
         <RenderizadoElemento/>
         <hr />
-        <ContadorHooks></ContadorHooks>
+        <ContadorHooks titulo='Seguidores'></ContadorHooks>
       </section>
     </div>
   );

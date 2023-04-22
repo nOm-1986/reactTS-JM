@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-export const ContadorHooks = (): JSX.Element => {
+export const ContadorHooks = (props: {titulo: string}): JSX.Element => {
 
     const [contador, setContador] = useState(0);
 
@@ -9,7 +9,7 @@ export const ContadorHooks = (): JSX.Element => {
 
     return(
         <>
-            <h2>Hook - useState</h2>
+            <h2>Hook - useState - {props.titulo}</h2>
             <nav>
                 <button onClick = {sumar}>➕</button>
                 <button onClick = {restar}>➖</button>
@@ -17,4 +17,8 @@ export const ContadorHooks = (): JSX.Element => {
             <h3>{contador}</h3>
         </>
     );
+}
+
+ContadorHooks.defaultProps = {
+    titulo: 'Clicks'
 }
