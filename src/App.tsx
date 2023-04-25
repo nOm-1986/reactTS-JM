@@ -6,6 +6,7 @@ import { RenderizadoElemento } from './components/RenderizadoElemento';
 import './App.css';
 import { ContadorHooks } from './components/ContadorHooks';
 import { ScrollHooks } from './components/ScrollHooks';
+import CicloVida from './components/CicloDeVida';
 
 const elArreglo = ['a',1,2,3,'b','4'];
 
@@ -26,6 +27,8 @@ function App() {
           funcion={(num:number) => num*num}
           componenteReact = {<Componente/>}
         />
+        <hr />
+        <CicloVida />
         <hr />
         <RenderizadoCondicional/>
         <hr />
