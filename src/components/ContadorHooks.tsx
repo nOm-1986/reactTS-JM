@@ -5,7 +5,7 @@ import React, {useState} from "react";
 //De esta forma aplico directamente la destructuración y me ahorro despues el props.titulo
 export const ContadorHooks = ({titulo}: {titulo: string}): JSX.Element => {
 
-    const [contador, setContador] = useState(0);
+    const [contador, setContador] = useState<number>(0);
 
     const sumar = () => setContador(contador + 1);
     const restar = () => setContador(contador - 1);
