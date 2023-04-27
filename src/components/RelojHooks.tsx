@@ -1,16 +1,30 @@
 import React, {useState, useEffect} from 'react';
 
-function Reloj(hora:any){
+function Reloj({hora}:any){
     return <h3>{hora}</h3>
 }
 
 
 
 export const RelojHooks = (): JSX.Element => {
-    const [hora, setHora] = useState<string>(new Date().toLocaleDateString());
-    const [visible, setVisible] = useState<boolean>(true);
+    const [hora, setHora] = useState(new Date().toLocaleTimeString());
+    const [visible, setVisible] = useState<boolean>(false);
 
-    const tictac = (valor:boolean) => {}
+    useEffect(() => {
+        let temporizador;
+
+        if(visible){
+            temporizador = setInterval(() => {
+                setHora(new Date().toLocaleTimeString());
+            }, 1000);
+        } else {
+            clearInterval(temporizador);
+        }
+
+        return () => {
+            console.log("Fase de Desmontaje")
+        }
+    }, [visible]);
 
     return(
         <>
