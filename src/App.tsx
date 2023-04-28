@@ -8,6 +8,8 @@ import { ContadorHooks } from './components/ContadorHooks';
 //import { ScrollHooks } from './components/ScrollHooks';
 import CicloVida from './components/CicloDeVida';
 import { RelojHooks } from './components/RelojHooks';
+import { UseEffectHook } from './components/UseEffectHook';
+import { CicloVidaFetch } from './components/CicloVidaFetch';
 
 const elArreglo = ['a',1,2,3,'b','4'];
 
@@ -38,6 +40,11 @@ function App() {
         <ContadorHooks titulo='Seguidores'></ContadorHooks>
         <hr />
         <RelojHooks/>
+        <hr />
+        <UseEffectHook></UseEffectHook>
+        <br/>
+        <br/>
+        <CicloVidaFetch></CicloVidaFetch>
       </section>
     </div>
   );
