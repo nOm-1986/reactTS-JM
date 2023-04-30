@@ -10,13 +10,14 @@ import CicloVida from './components/CicloDeVida';
 import { RelojHooks } from './components/RelojHooks';
 import { UseEffectHook } from './components/UseEffectHook';
 import { CicloVidaFetch } from './components/CicloVidaFetch';
+import AjaxHooks from './components/AjaxHooks';
 
 const elArreglo = ['a',1,2,3,'b','4'];
 
 function App() {
   return (
     <div className="App">
-      {/* <section>
+      <section>
         
         <hr />
         <Componente />
@@ -44,9 +45,11 @@ function App() {
         <UseEffectHook></UseEffectHook>
         <br/>
         <br/>
-      </section> */}
-      <CicloVidaFetch></CicloVidaFetch>
-
+        <CicloVidaFetch></CicloVidaFetch>
+        <AjaxHooks/>
+        <br></br>
+        <hr />
+      </section>
     </div>
   );
 }
