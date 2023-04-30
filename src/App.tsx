@@ -44,9 +44,9 @@ function App() {
         <UseEffectHook></UseEffectHook>
         <br/>
         <br/>
-        <CicloVidaFetch></CicloVidaFetch>
       </section> */}
-      
+      <CicloVidaFetch></CicloVidaFetch>
+
     </div>
   );
 }

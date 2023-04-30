@@ -29,7 +29,14 @@ export const CicloVidaFetch = ():JSX.Element => {
         <>
             <h1>Using Fetch to get data</h1>
             <ul>
-                {users.length === null ? (<h3>Cargando...</h3>):(users.map(user => ( <li>{user.id}</li>)))}
+                {   
+                    users.length === null ? (<h3>Cargando...</h3>):(
+                        users.map(user => ( 
+                                <li>{user.id} --- {user.first_name} --- {user.last_name}</li>
+                            )
+                        )
+                    )
+                }
             </ul>
         </>
     );
