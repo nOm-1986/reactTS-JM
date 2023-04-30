@@ -17,7 +17,7 @@ const defaultUser:UsersApi = {
 }
 
 export const CicloVidaFetch = ():JSX.Element => {
-    const [users, setUsers] = useState<[UsersApi] | unknown>([defaultUser]);
+    const [users, setUsers] = useState<[UsersApi]>([defaultUser]);
     
     useEffect(() => {
         fetch('https://reqres.in/api/users?page=1')
@@ -29,9 +29,7 @@ export const CicloVidaFetch = ():JSX.Element => {
         <>
             <h1>Using Fetch to get data</h1>
             <ul>
-                if(type users === array) {
-                    users.map()
-                }
+                {users.length === null ? (<h3>Cargando...</h3>):(users.map(user => ( <li>{user.id}</li>)))}
             </ul>
         </>
     );

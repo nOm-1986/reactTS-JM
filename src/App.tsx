@@ -16,7 +16,7 @@ const elArreglo = ['a',1,2,3,'b','4'];
 function App() {
   return (
     <div className="App">
-      <section>
+      {/* <section>
         
         <hr />
         <Componente />
@@ -45,7 +45,8 @@ function App() {
         <br/>
         <br/>
         <CicloVidaFetch></CicloVidaFetch>
-      </section>
+      </section> */}
+      
     </div>
   );
 }
