@@ -11,6 +11,7 @@ import { RelojHooks } from './components/RelojHooks';
 import { UseEffectHook } from './components/UseEffectHook';
 import { CicloVidaFetch } from './components/CicloVidaFetch';
 import AjaxHooks from './components/AjaxHooks';
+import { HooksPersonalizados } from './components/HooksPersonalizados';
 
 const elArreglo = ['a',1,2,3,'b','4'];
 
@@ -49,6 +50,8 @@ function App() {
         <AjaxHooks/>
         <br></br>
         <hr />
+        <br></br>
+        <HooksPersonalizados/>
       </section>
     </div>
   );
